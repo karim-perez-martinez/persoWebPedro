@@ -13,19 +13,23 @@
 .fourth-color { 
 	background: #596e79; 
 }
+
 .fifth-color {
     background: #f8f9fa;
 }
+
 .background {
     width: 100%;
     height: 100vh;
     padding: 0;
     margin: 0;
 }
+
 .container {
     padding: 0;
     margin: 0;
 }
+
 .green-box {
     display: flex;
     position: absolute;
@@ -38,6 +42,7 @@
     margin: 0%;
     padding: 0%;
 }
+
 .left-hand {
     display: flex;
     flex-direction: column;
@@ -48,6 +53,7 @@
     margin: 0;
     padding: 0%;
 }
+
 .right-hand {
     display: flex;
     flex-direction: column;
@@ -60,9 +66,11 @@
     padding-left: 5%;
     padding-right: 5%;
 }
+
 .buttons-cv {
     align-items: center;
 }
+
 .footer {
     position: fixed;
     left: 0;
@@ -71,7 +79,7 @@
     height: 60px;
     background-color: #f8f9fa;
     text-align: center;
-  }
+}
 
 .photo {
     display: flex;
@@ -86,37 +94,95 @@
     margin-top: 20px;
     height: 300px;
 }
+
 .background-sections {
     display: flex;
     height: 100%;
     width: 100%;
 }
+
 .greetings {
     font-size: 4rem;
     font-weight: bolder; 
     text-shadow: 8px 8px 16px 0px #888888;
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
+
+.semi-greetings {
+    font-size: 3rem;
+    font-weight: bolder; 
+    text-shadow: 8px 8px 16px 0px black;
+    margin-bottom: 10px;
+}
+
 .subtitle {
     margin-bottom: 10px;
     font-size: 2rem;
 }
+
 .normal-text{
     font-size: 1.2rem;
 }
+
 .buttons.container {
     display: flex; /* Default layout is flexbox */
     flex-direction: row; /* Align buttons in a row by default */
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     gap: 10px; /* Add spacing between buttons */
-  }
+}
+
 .blue-line {
     background-color: #0d6efd; 
     height: 5px; 
     width: 200px; 
     margin-bottom: 30px;
 }
+
+.page {
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    padding: 80px;
+    gap: 20px;
+    background-color: #dfd3c3;
+}
+
+.icon {
+    height: 40px;
+}
+
+.rectangle {
+    width: 800px; /* Fixed width */
+    height: 350px; /* Fixed height */
+    background-color: #f8f9fa;
+    color: #333; /* Dark text */
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for aesthetics */
+    font-size: 1.2rem; /* Fixed text size */
+    padding-top: 15px;
+    gap: 20px;
+}
+
+.left-rectangle {
+    padding-left: 5%;
+    width: 30%;
+    text-align: right;
+    font-weight: bold;
+    color: #0d6efd;
+    font-size: 1.3rem;
+}
+
+.right-rectangle {
+    padding-left: 5%;
+    text-align: left;
+    width: 70%;
+    padding-right: 5%;
+}
+
 
 /* Custom styles for green-box */
 @media (max-width: 768px) { /* Adjust the breakpoint as needed */
@@ -147,9 +213,34 @@
         flex-direction: column; /* Switch to column layout for screens 768px or smaller */
         align-items: center; /* Optional: Center-align the buttons */
         gap: 2px; /* Adjust spacing between buttons */
-      }
+    }
     .blue-line {
         width: 100px; 
         margin-bottom: 15px;
     }
-  }
+    .semi-greetings {
+        font-size: 2.5rem;
+    }
+    .icon {
+        height: 30px;
+    }
+    .rectangle {
+        width: 400px; /* Fixed width */
+        height: 200px; /* Fixed height */
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+   }
+   .left-rectangle {
+      width: 100%;
+      text-align: center;
+      padding-right: 5%;
+      padding-left: 5%;
+   }
+   .right-rectangle {
+      width: 100%;
+      text-align: center;
+      padding-right: 5%;
+      padding-left: 5%;
+   }
+}
