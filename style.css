@@ -140,7 +140,7 @@
 }
 
 .page {
-    height: 100vh; 
+    height: 100%; 
     display: flex; 
     flex-direction: column; 
     align-items: center;
@@ -181,6 +181,15 @@
     text-align: left;
     width: 70%;
     padding-right: 5%;
+    font-size: 1.2rem;
+}
+
+.full-rectangle {
+    padding-left: 5%;
+    text-align: center;
+    width: 100%;
+    padding-right: 5%;
+    font-size: 1.2rem;
 }
 
 
@@ -217,6 +226,9 @@
     .blue-line {
         width: 100px; 
         margin-bottom: 15px;
+        margin-top: 0%;
+        padding-top: 0%;
+        z-index: 100;
     }
     .semi-greetings {
         font-size: 2.5rem;
@@ -225,8 +237,8 @@
         height: 30px;
     }
     .rectangle {
-        width: 400px; /* Fixed width */
-        height: 200px; /* Fixed height */
+        width: 380px; /* Fixed width */
+        height: auto;
         flex-direction: column;
         justify-content: center;
         gap: 0;
@@ -236,11 +248,16 @@
       text-align: center;
       padding-right: 5%;
       padding-left: 5%;
+      font-size: 1.1rem;
    }
    .right-rectangle {
       width: 100%;
       text-align: center;
       padding-right: 5%;
       padding-left: 5%;
+      font-size: 1rem;
    }
+   .full-rectangle {
+    font-size: 1rem;
+ }
 }
