@@ -201,7 +201,7 @@
       max-width: 100%;
     }
     .green-box {
-        height: 100vh;
+        height: 100%;
         top: 2%;
         bottom: 2%;
         justify-content: center;
