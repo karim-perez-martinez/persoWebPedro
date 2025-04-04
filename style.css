@@ -80,6 +80,36 @@
     justify-content: center ;
 }
 
+.profile-pic {
+    border-radius: 50%; 
+    box-shadow: 8px 8px 16px 0px #888888; 
+    margin-top: 20px;
+    height: 300px;
+}
+.background-sections {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.greetings {
+    font-size: 4rem;
+    font-weight: bolder; 
+    text-shadow: 8px 8px 16px 0px #888888;
+}
+.subtitle {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+.normal-text{
+    font-size: 1.2rem;
+}
+.buttons.container {
+    display: flex; /* Default layout is flexbox */
+    flex-direction: row; /* Align buttons in a row by default */
+    gap: 10px; /* Add spacing between buttons */
+  }
+
+
 /* Custom styles for green-box */
 @media (max-width: 768px) { /* Adjust the breakpoint as needed */
     .green-box .left-hand,
@@ -93,4 +123,21 @@
         bottom: 2%;
         justify-content: center;
     }
+    .profile-pic {
+        height: 200px;
+    }
+    .greetings {
+        font-size: 3rem;
+    }
+    .subtitle {
+        font-size: 1.5rem;
+    }
+    .normal-text {
+        font-size: 1rem;
+    }
+    .buttons.container {
+        flex-direction: column; /* Switch to column layout for screens 768px or smaller */
+        align-items: center; /* Optional: Center-align the buttons */
+        gap: 2px; /* Adjust spacing between buttons */
+      }
   }
