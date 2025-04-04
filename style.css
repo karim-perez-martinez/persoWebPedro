@@ -106,6 +106,8 @@
 .buttons.container {
     display: flex; /* Default layout is flexbox */
     flex-direction: row; /* Align buttons in a row by default */
+    justify-content: center;
+    align-items: center;
     gap: 10px; /* Add spacing between buttons */
   }
 
