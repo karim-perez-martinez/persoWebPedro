@@ -95,6 +95,7 @@
     font-size: 4rem;
     font-weight: bolder; 
     text-shadow: 8px 8px 16px 0px #888888;
+    margin-bottom: 0; 
 }
 .subtitle {
     margin-bottom: 10px;
@@ -110,7 +111,12 @@
     align-items: center;
     gap: 10px; /* Add spacing between buttons */
   }
-
+.blue-line {
+    background-color: #0d6efd; 
+    height: 5px; 
+    width: 200px; 
+    margin-bottom: 30px;
+}
 
 /* Custom styles for green-box */
 @media (max-width: 768px) { /* Adjust the breakpoint as needed */
@@ -142,4 +148,8 @@
         align-items: center; /* Optional: Center-align the buttons */
         gap: 2px; /* Adjust spacing between buttons */
       }
+    .blue-line {
+        width: 100px; 
+        margin-bottom: 15px;
+    }
   }
