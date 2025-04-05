@@ -1,3 +1,11 @@
+.inter-tight-font {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 .first-color { 
 	background: #f0ece2; 
 }
@@ -168,8 +176,8 @@
 }
 
 .left-rectangle {
-    padding-left: 5%;
-    width: 30%;
+    padding-left: 2%;
+    width: 35%;
     text-align: right;
     font-weight: bold;
     color: #0d6efd;
@@ -177,9 +185,9 @@
 }
 
 .right-rectangle {
-    padding-left: 5%;
+    padding-left: 2%;
     text-align: left;
-    width: 70%;
+    width:65%;
     padding-right: 5%;
     font-size: 1.2rem;
 }
@@ -197,7 +205,9 @@
     max-width: 70%;
     font-size: 1.2rem;
 }
-
+.small-text {
+    font-size: 1rem;
+}
 /* Custom styles for green-box */
 @media (max-width: 768px) { /* Adjust the breakpoint as needed */
     .green-box .left-hand,
@@ -270,5 +280,9 @@
    }
    .full-rectangle {
     font-size: 1rem;
- }
+   }
+   .small-text {
+    font-size: 0.9rem;
+   }
+
 }
